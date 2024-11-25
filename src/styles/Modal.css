@@ -1,0 +1,191 @@
+.modal-overlay {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.8);
+    z-index: 1000;
+    display: flex;
+    justify-content: center;
+    animation: slideUp 0.3s ease-out forwards;
+}
+
+.modal-overlay.closing {
+    animation: slideDown 0.3s ease-in forwards;
+}
+
+.modal-content {
+    background-color: #111;
+    width: 100%;
+    max-width: 1400px;
+    height: 95vh;
+    margin: 5vh 20px 0 20px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    padding: 40px;
+    position: relative;
+    overflow-y: auto;
+}
+
+.modal-close {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    background: none;
+    border: none;
+    color: #888;
+    font-size: 32px;
+    cursor: pointer;
+    transition: color 0.2s;
+}
+
+.modal-close:hover {
+    color: white;
+}
+
+.legal-content {
+    max-width: 800px;
+    margin: 0 auto;
+    color: #888;
+    padding: 20px;
+}
+
+.legal-content h1,
+.legal-content h2,
+.legal-content h3 {
+    color: white;
+    margin: 2rem 0 1rem 0;
+}
+
+.legal-content h1 {
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+}
+
+.legal-content h2 {
+    font-size: 1.8rem;
+}
+
+.legal-content h3 {
+    font-size: 1.4rem;
+}
+
+.legal-content p {
+    line-height: 1.6;
+    margin-bottom: 1rem;
+}
+
+.legal-content a {
+    color: white;
+    text-decoration: none;
+    transition: opacity 0.2s;
+}
+
+.legal-content a:hover {
+    opacity: 0.7;
+}
+
+.legal-content ul {
+    margin: 1rem 0;
+    padding-left: 1.5rem;
+}
+
+.legal-content li {
+    margin-bottom: 0.5rem;
+}
+
+.legal-content .index {
+    list-style: none;
+    padding-left: 0;
+}
+
+.legal-content .index-link {
+    color: #888;
+    text-decoration: none;
+    transition: color 0.2s;
+}
+
+.legal-content .index-link:hover {
+    color: white;
+}
+
+.legal-content .seal {
+    margin-top: 4rem;
+    padding-top: 2rem;
+    border-top: 1px solid #333;
+    text-align: center;
+    font-size: 0.9rem;
+}
+
+.legal-content .seal a {
+    color: #888;
+}
+
+.legal-content .seal a:hover {
+    color: white;
+}
+
+@keyframes slideUp {
+    from {
+        transform: translateY(100%);
+    }
+
+    to {
+        transform: translateY(0);
+    }
+}
+
+.modal-content::-webkit-scrollbar {
+    width: 8px;
+}
+
+.modal-content::-webkit-scrollbar-track {
+    background: #111;
+}
+
+.modal-content::-webkit-scrollbar-thumb {
+    background: #333;
+    border-radius: 4px;
+}
+
+.modal-content::-webkit-scrollbar-thumb:hover {
+    background: #444;
+}
+
+.legal-content .glossary {
+    list-style: none;
+    padding-left: 0;
+}
+
+.legal-content .glossary li {
+    margin-bottom: 1.5rem;
+}
+
+.legal-content .glossary strong {
+    color: white;
+    display: block;
+    margin-bottom: 0.5rem;
+}
+
+.legal-content .m-elements {
+    list-style: none;
+    padding-left: 0;
+}
+
+.legal-content .m-elements li {
+    margin-bottom: 1rem;
+}
+
+.legal-content .m-elements strong {
+    color: white;
+}
+
+@keyframes slideDown {
+    from {
+        transform: translateY(0);
+    }
+
+    to {
+        transform: translateY(100%);
+    }
+}
