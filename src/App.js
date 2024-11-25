@@ -29,7 +29,7 @@ function App()
     {
       id: 1,
       title: "Social Gamebox",
-      link: "https://socialgamebox.com",
+      link: "https://socialgamebox.app",
       company: "Personal Project",
       image: socialGameboxImage,
       tags: ["Flutter", "Firebase", "CI/CD"],
