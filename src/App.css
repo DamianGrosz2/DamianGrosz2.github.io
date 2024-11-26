@@ -449,3 +449,50 @@ h3 {
 .grid-image {
   cursor: pointer;
 }
+
+/* Update existing modal styles */
+.modal-project .project-text p {
+  font-family: system-ui;
+  font-weight: 800;
+  font-size: 32px;
+  line-height: 42px;
+  color: rgb(73, 73, 73);
+  margin-bottom: 1.5rem;
+}
+
+/* Add mobile-specific modal styles */
+@media (max-width: 768px) {
+  .modal-close {
+    position: fixed !important;
+    /* Override any other positioning */
+    top: 4rem !important;
+    right: 3rem !important;
+    z-index: 1000;
+  }
+
+  .modal-project .project-text h3 {
+    font-size: 24px;
+    /* Smaller title */
+    line-height: 1.2;
+    margin-bottom: 0.5rem;
+  }
+
+  .modal-project .project-text p {
+    font-size: 18px;
+    /* Smaller description text */
+    line-height: 24px;
+    margin-bottom: 1rem;
+  }
+
+  .modal-project .tag {
+    font-size: 12px;
+    /* Smaller tags */
+    padding: 3px 10px;
+  }
+
+  .modal-project .company {
+    font-size: 14px;
+    /* Slightly larger company name for better readability */
+    margin-bottom: 0.5rem;
+  }
+}

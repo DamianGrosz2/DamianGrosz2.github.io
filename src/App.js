@@ -159,7 +159,7 @@ function App()
       company: "Personal Project",
       image: pfandImage,
       tags: ["Environmental", "Social Impact", "Design"],
-      description: <>Created a recycling box with a <span className="highlight">basketball hoop on top</span> for my school. Recyclable bottles aren't wasted, and the deposit money goes to <span className="highlight">environmental causes</span> - win-win!</>,
+      description: <>Created a recycling box with a basketball hoop on top for my school. Recyclable bottles aren't wasted, and the deposit money goes to <span className="highlight">environmental causes</span> - win-win!</>,
       descriptionsimple: "Created a recycling box with a basketball hoop on top for my school. Recyclable bottles aren't wasted, and the deposit money goes to environmental causes - win-win!"
     }
   ];
