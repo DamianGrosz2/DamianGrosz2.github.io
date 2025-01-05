@@ -63,7 +63,8 @@ function App()
       company: "Personal Project",
       image: gymdymImage,
       tags: ["Swift", "Python"],
-      description: <>Simple but effective watchOS workout tracker. Uses watch sensors to <span className="highlight">automatically count reps</span> and sets. Makes gym logging fun and effortless.</>,
+      description: <>Simple but effective < span className="highlight" >watchOS workout tracker</span>. Count reps and sets. Makes gym logging fun and effortless.</>,
+      // Uses watch sensors to < span className = "highlight" > automatically  </span>
       descriptionsimple: "Simple but effective watchOS workout tracker. Uses watch sensors to automatically count reps and sets. Makes gym logging fun and effortless."
     },
     {
